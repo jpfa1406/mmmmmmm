@@ -1,0 +1,164 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  align-items: flex-start;
+
+}
+
+div.appbar {
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f7d736;
+  box-shadow: 0 4px 8px #2c2c2c;
+}
+
+.logo{
+  height: 40px;
+  padding: 10px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.form-card{
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* margin-left: 130px; */
+  width: 350px;
+  border-radius: 5px;
+  /* margin-right: 130px; */
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  padding: 10px;
+}
+
+.form-card-title{
+  border: 0px;
+}
+
+.autoresize{
+  border-style: none;
+  resize: none;
+}
+
+.card-container{
+  display: flex;
+    justify-content: space-evenly;
+    font-family: 'Permanent Marker', cursive;
+    /* width: 250px; */
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #2c2c2c;
+}
+
+.card-title{
+    width: inherit;
+    margin-bottom: 8px;
+}
+
+h3{
+  padding-bottom: 14px;
+  font-size: large;
+  margin: 0;
+}
+
+.titulo{
+    text-align: left;
+    width: inherit;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.card-content{
+  color: #4c4c4c;
+  justify-content: center;
+  width: 402px;
+  height: 140px;
+  resize: vertical;
+  margin-bottom: 12px;
+}
+
+
+/* Você pode usar o CSS comentado abaixo, se ajudar */
+/* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
+.btn {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+
+  background-color: #f7d736;
+
+  transition: background-color 0.3s;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn:before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 0;
+  padding-top: 0;
+
+  border-radius: 100%;
+
+  background-color: rgba(236, 240, 241, 0.3);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+
+  transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+} 
+
+.functions{
+  height: 20px;
+}
+
+.card-top{
+  justify-content: space-between;
+  display: flex;
+}

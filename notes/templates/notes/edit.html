@@ -1,0 +1,26 @@
+{% extends "notes/base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'notes/css/edit.css' %}">
+
+
+<div class="appbar">
+    <img src="{% static 'notes/img/logo-getit.png' %}" class="logo" />
+    <span class="subtitle">Como o Post-it, mas com outro verbo</span>
+</div>
+
+<main class="container">
+
+    <form method="post" class="card-container">
+        {% csrf_token %}
+        <div class="card">
+            <p class="titulo">Título</p>
+            <input class="card-title" placeholder={{ note.title }} name="titulo" />
+            <p class="titulo">Detalhes</p>
+            <textarea placeholder={{note.content}} name="detalhes" class="card-content" contenteditable></textarea>
+            <button class="btn" type="submit">editar</button>
+        </div>
+    </form>
+</main>
+{% endblock %}
